@@ -4,7 +4,11 @@ import Foundation
 import SwiftUI
 
 @available(iOS 15.0, *)
+public protocol BWTextFieldStyle {
+    func body(content: BWTextField) -> BWTextField
+}
 
+@available(iOS 15.0, *)
 public struct BWTextField: View {
     let imageName: String
     let placeholderText: String
