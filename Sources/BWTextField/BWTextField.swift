@@ -5,7 +5,7 @@ import SwiftUI
 
 @available(iOS 15.0, *)
 
-struct CustomTextField: View {
+struct BWTextField: View {
     let imageName: String
     let placeholderText: String
     let isSecureField: Bool
