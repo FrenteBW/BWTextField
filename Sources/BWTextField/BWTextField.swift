@@ -5,7 +5,7 @@ import SwiftUI
 
 @available(iOS 15.0, *)
 
-struct BWTextField: View {
+public struct BWTextField: View {
     let imageName: String
     let placeholderText: String
     let isSecureField: Bool
@@ -17,7 +17,7 @@ struct BWTextField: View {
         case secure, plain
     }
     
-    var body: some View {
+    public var body: some View {
         if isSecureField { //SecureField
             VStack {
                 ZStack(alignment: .trailing) {
