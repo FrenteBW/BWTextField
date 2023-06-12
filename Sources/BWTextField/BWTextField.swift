@@ -4,15 +4,18 @@ import Foundation
 import SwiftUI
 
 @available(iOS 15.0, *)
+/*
 public protocol BWTextFieldStyle {
     func body(content: BWTextField) -> BWTextField
 }
+ */
+
 
 @available(iOS 15.0, *)
 public struct BWTextField: View {
-    let imageName: String
-    let placeholderText: String
-    let isSecureField: Bool
+    let imageName: String = "pencil"
+    let placeholderText: String = "Enter your ID"
+    let isSecureField: Bool = false
     @Binding var text: String
     @State private var secretbutton: Bool = false
     @FocusState var inFocus: Field?
@@ -20,6 +23,8 @@ public struct BWTextField: View {
     enum Field {
         case secure, plain
     }
+    
+    //public init() {}
     
     public var body: some View {
         if isSecureField { //SecureField
