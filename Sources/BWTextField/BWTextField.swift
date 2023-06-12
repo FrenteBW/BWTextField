@@ -5,10 +5,9 @@ import SwiftUI
 
 @available(iOS 15.0, *)
 
-
-
 @available(iOS 15.0, *)
 public struct BWTextField: View {
+    
     let imageName: String
     let placeholderText: String
     let isSecureField: Bool
